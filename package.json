@@ -2,11 +2,13 @@
   "name": "colour-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://swarag-n.github.io/colour-clone/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "chroma-js": "^2.1.0",
+    "rc-slider": "^9.3.1",
     "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
