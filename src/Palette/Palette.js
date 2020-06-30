@@ -6,8 +6,8 @@ class Palette extends Component {
     render() {
         let {colors,paletteName} = this.props.palette
         let colourBoxes = []
-        colors.every(colour=>(
-            colourBoxes.push(<ColorBox background={colour.color} name={colour.name} key={colour.color}/>)
+        colors[300].every(colour=>(
+            colourBoxes.push(<ColorBox background={colour.hex} name={colour.name} key={colour.color}/>)
         ))
         return (
             <div className="Palette">
