@@ -1,8 +1,10 @@
 import React , {Component} from 'react';
 import './App.css';
-import {Route,Switch} from 'react-router-dom'
+import {HashRouter,Route,Switch} from 'react-router-dom'
+
 import Palette from './Palette/Palette'
 import PaletteList from './Palette/PaletteList'
+import SingleColourPalette from './Palette/SingleColourPalette'
 import colours from  './seedColors' 
 import {generatePalette} from './Palette/ColorHelper'
 
@@ -15,9 +17,25 @@ class App extends Component{
   }
   render () {
     return (
+      <HashRouter basename='/'>
       <div className="App">
         <Switch>
-          <Route exact path="/" render={()=><PaletteList palettes={colours}/>}/>
+          <Route
+            exact
+            path="/palette/:paletteId/:colorID"
+            render={
+              (routeProps)=>(
+              <SingleColourPalette
+                {...routeProps}
+                palette={
+                  generatePalette(
+                    this.findPaletteById(routeProps.match.params.paletteId)
+                  )
+                }
+                colorId={routeProps.match.params.colorID}
+                />)
+            }
+          />
           <Route
             exact 
             path="/palette/:id"  
@@ -28,10 +46,19 @@ class App extends Component{
                   )
                 }/>)
               }
-            />
+          />
+          <Route 
+            exact 
+            path="/" 
+            render={
+              (routeProps)=><PaletteList palettes={colours} {...routeProps}/>
+            }
+          />
+
         </Switch>
         {/* <Palette palette={generatePalette(colours[1])} /> */}
       </div>
+      </HashRouter>
     );
   }
 }

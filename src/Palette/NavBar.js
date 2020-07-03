@@ -31,32 +31,35 @@ class NavBar extends Component {
     handleSnackbarClose(){
         this.setState({open:false})
     }
+
     render() {
-        const {level, handleLevelChange} = this.props
+        const {level, handleLevelChange, showSlider} = this.props
         const {open,format} = this.state;
         return (
             <header className="NavBar">
                 <div className="logo">
                     <Link to="/">colour-clone</Link>
                 </div>
-                <div className="slider-container">
-                    <span>
-                        Level:{level}
-                    </span>
-                    <div className="slider">
-                        <Slider 
-                            step={100} 
-                            min={100} 
-                            max={900} 
-                            defaultValue={level}
-                            onAfterChange={handleLevelChange}/>
+                {showSlider &&
+                    <div className="slider-container">
+                        <span>
+                            Level:{level}
+                        </span>
+                        <div className="slider">
+                            <Slider 
+                                step={100} 
+                                min={100} 
+                                max={900} 
+                                defaultValue={level}
+                                onAfterChange={handleLevelChange}/>
+                        </div>
                     </div>
-                </div>
+                }
                 <div className="select-container">
                     <Select value={format} onChange={this.handleSelectChange}>
                         <MenuItem value="hex">HEX - #ffffff</MenuItem>
                         <MenuItem value="rgb">RGB - rgb(255,255,255)</MenuItem>
-                        <MenuItem value="rgba">RGBA - rgb(255,255,255,1.0)</MenuItem>
+                        <MenuItem value="rgba">RGBA - rgba(255,255,255,1.0)</MenuItem>
                     </Select>
                 </div>
                 <Snackbar
