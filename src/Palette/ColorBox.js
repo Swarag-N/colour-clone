@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import styles from './Styles/ColorBoxStyles'
 
-import './ColorBox.css'
+// import './ColorBox.css'
 
 class ColorBox extends Component {
     constructor(props){
