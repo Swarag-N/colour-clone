@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route, Switch } from "react-router-dom";
-// import { HashRouter, Route, Switch } from "react-router-dom";
+// import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Palette from "./Palette/Palette";
@@ -58,11 +58,11 @@ class App extends Component {
   }
   render() {
     return (
-      // <HashRouter basename="/">
+      <HashRouter basename="/">
       <Route
         render={({ location }) => (
           <TransitionGroup>
-            <CSSTransition key={location.key} classNames="page" timeout={500}>
+            <CSSTransition key={location.pathname} classNames="page" timeout={500}>
               <Switch location={location}>
                 <Route
                   exact
@@ -140,7 +140,7 @@ class App extends Component {
           </TransitionGroup>
         )}
       />
-      // </HashRouter>
+      </HashRouter>
     );
   }
 }

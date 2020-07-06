@@ -56,6 +56,7 @@ class NewPaletteForm extends Component {
       let isDuplicateColor=true
       while(isDuplicateColor){
         randomColor = allColours[Math.floor(Math.random()*allColours.length)]
+        // eslint-disable-next-line
         isDuplicateColor = this.state.colours.some(colour=>colour.name ===randomColor.name)
       }
       this.setState(st=>({
