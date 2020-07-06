@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/colour-clone/static/css/main.c03796fe.chunk.css",
-    "main.js": "/colour-clone/static/js/main.13810841.chunk.js",
-    "main.js.map": "/colour-clone/static/js/main.13810841.chunk.js.map",
+    "main.css": "/colour-clone/static/css/main.fcefc688.chunk.css",
+    "main.js": "/colour-clone/static/js/main.b559ee6a.chunk.js",
+    "main.js.map": "/colour-clone/static/js/main.b559ee6a.chunk.js.map",
     "runtime-main.js": "/colour-clone/static/js/runtime-main.7eebe7d7.js",
     "runtime-main.js.map": "/colour-clone/static/js/runtime-main.7eebe7d7.js.map",
-    "static/css/2.ed590494.chunk.css": "/colour-clone/static/css/2.ed590494.chunk.css",
-    "static/js/2.0e933737.chunk.js": "/colour-clone/static/js/2.0e933737.chunk.js",
-    "static/js/2.0e933737.chunk.js.map": "/colour-clone/static/js/2.0e933737.chunk.js.map",
+    "static/css/2.0da342d8.chunk.css": "/colour-clone/static/css/2.0da342d8.chunk.css",
+    "static/js/2.354d796c.chunk.js": "/colour-clone/static/js/2.354d796c.chunk.js",
+    "static/js/2.354d796c.chunk.js.map": "/colour-clone/static/js/2.354d796c.chunk.js.map",
     "index.html": "/colour-clone/index.html",
-    "precache-manifest.f45492d1eda127b4650fbbe93ebf0d1d.js": "/colour-clone/precache-manifest.f45492d1eda127b4650fbbe93ebf0d1d.js",
+    "precache-manifest.e06da7b3df81f14ec4a2523bf7b1fde5.js": "/colour-clone/precache-manifest.e06da7b3df81f14ec4a2523bf7b1fde5.js",
     "service-worker.js": "/colour-clone/service-worker.js",
-    "static/css/2.ed590494.chunk.css.map": "/colour-clone/static/css/2.ed590494.chunk.css.map",
-    "static/css/main.c03796fe.chunk.css.map": "/colour-clone/static/css/main.c03796fe.chunk.css.map",
-    "static/js/2.0e933737.chunk.js.LICENSE.txt": "/colour-clone/static/js/2.0e933737.chunk.js.LICENSE.txt"
+    "static/css/2.0da342d8.chunk.css.map": "/colour-clone/static/css/2.0da342d8.chunk.css.map",
+    "static/css/main.fcefc688.chunk.css.map": "/colour-clone/static/css/main.fcefc688.chunk.css.map",
+    "static/js/2.354d796c.chunk.js.LICENSE.txt": "/colour-clone/static/js/2.354d796c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7eebe7d7.js",
-    "static/css/2.ed590494.chunk.css",
-    "static/js/2.0e933737.chunk.js",
-    "static/css/main.c03796fe.chunk.css",
-    "static/js/main.13810841.chunk.js"
+    "static/css/2.0da342d8.chunk.css",
+    "static/js/2.354d796c.chunk.js",
+    "static/css/main.fcefc688.chunk.css",
+    "static/js/main.b559ee6a.chunk.js"
   ]
 }
