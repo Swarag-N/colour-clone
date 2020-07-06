@@ -1,14 +1,14 @@
-/* .page {
+.page {
   height: 100vh;
   position: fixed;
   width: 100%;
   top: 0;
   transition: opacity 0.5s ease-in-out;
-  overflow-x: scroll; */
-/* } */
-/* overflow-y: hidden; */
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+}
 
-/* .page-enter {
+.page-enter {
   opacity: 0;
 }
 .page-enter-active {
@@ -16,4 +16,4 @@
 }
 .page-exit-active {
   opacity: 0;
-} */
+}

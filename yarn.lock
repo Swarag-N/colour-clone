@@ -2172,6 +2172,11 @@ array-includes@^3.0.3, array-includes@^3.1.1:
     es-abstract "^1.17.0"
     is-string "^1.0.5"
 
+array-move@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/array-move/-/array-move-2.2.2.tgz#c125f84d64e2f4bc09147f91f900a1bf58bb25d1"
+  integrity sha512-lKc6C+nsOSA1o7eHSP/HshlGDYUI7QKyaus5kPDm2zEEPQID9xlspnraLR8l+rDlqg9mGo8ziE7F8TEnF6D3Tw==
+
 array-union@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-1.0.2.tgz#9a34410e4f4e3da23dea375be5be70f24778ec39"
@@ -4024,6 +4029,14 @@ email-addresses@^3.0.1:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/email-addresses/-/email-addresses-3.1.0.tgz#cabf7e085cbdb63008a70319a74e6136188812fb"
   integrity sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==
+
+emoji-mart@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/emoji-mart/-/emoji-mart-3.0.0.tgz#eca24a04881e27752a6921e09f65a86ce8539a50"
+  integrity sha512-r5DXyzOLJttdwRYfJmPq/XL3W5tiAE/VsRnS0Hqyn27SqPA/GOYwVUSx50px/dXdJyDSnvmoPbuJ/zzhwSaU4A==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    prop-types "^15.6.0"
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
@@ -8731,7 +8744,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.0.0, prop-types@^15.5.10, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -9145,7 +9158,7 @@ react-sortable-hoc@^1.11.0:
     invariant "^2.2.4"
     prop-types "^15.5.7"
 
-react-transition-group@^4.4.0:
+react-transition-group@^4.4.0, react-transition-group@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
   integrity sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
