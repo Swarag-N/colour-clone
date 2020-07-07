@@ -1,25 +1,26 @@
 # Colour Clone
 
 Clone of [Flat UI Colors](https://flatuicolors.com)
+
 Live at [Colour Clone](https://swarag-n.github.io/colour-clone/#/)
 
 ## HomePage
 
-![HomePage](readmeData\homePage.png)
+![HomePage](/readmeData/homePage.png)
 
 ## Creating a New Palette
 
-![CreatePage](readmeData\createPalette.png)
+![CreatePage](/readmeData/createPalette.png)
 
 ## View Pallete
 
-![View Palette](readmeData\viewPalete.png)
+![View Palette](/readmeData/viewPalete.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## More Colours
 
-![Shades](readmeData\ColorShades.png)
+![Shades](/readmeData/ColorShades.png)
 
 ## Available Scripts
 
