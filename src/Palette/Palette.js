@@ -15,6 +15,9 @@ class Palette extends Component {
             level:300,
             format:"hex"
         }
+        // if (this.props.palette===null){
+        //     this.props.history.push("/")
+        // }
         this.handleLevelChange = this.handleLevelChange.bind(this)
         this.handleFormatChange = this.handleFormatChange.bind(this)
     }

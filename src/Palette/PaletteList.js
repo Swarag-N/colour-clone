@@ -13,14 +13,20 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+
+import Snackbar from '@material-ui/core/Snackbar';
 
 import CloseIcon from '@material-ui/icons/Close';
 import CheckIcon from '@material-ui/icons/Check';
 import {blue,red} from "@material-ui/core/colors";
 
+
 import MiniPalette from './MiniPalette'
 
 import styles from './Styles/PaletteListStyles'
+
+
 
 class PaletteList extends Component {
     constructor(props){
@@ -28,11 +34,14 @@ class PaletteList extends Component {
         this.state={
             deleteDialoge:false,
             toBeDeletedId:"",
+            openReset:false
         }
         this.openDeleteDialoge=this.openDeleteDialoge.bind(this);
         this.closeDeleteDialoge=this.closeDeleteDialoge.bind(this);
         this.handleDeletion=this.handleDeletion.bind(this);
         this.redirectToPallete=this.redirectToPallete.bind(this);
+        this.clearLocalStorage=this.clearLocalStorage.bind(this);
+        this.handleClose=this.handleClose.bind(this);
     }
     openDeleteDialoge(id){
         this.setState({deleteDialoge:true, toBeDeletedId:id})
@@ -47,9 +56,16 @@ class PaletteList extends Component {
         this.props.deletePalette(this.state.toBeDeletedId)
         this.closeDeleteDialoge()
     }
+    clearLocalStorage(){
+        window.localStorage.clear("palettes")
+        this.setState({openReset:true})
+    }
+    handleClose(){
+        this.setState({openReset:false})
+    }
     render() {
         const {palettes,classes} = this.props
-        const {deleteDialoge} = this.state;
+        const {deleteDialoge,openReset} = this.state;
         return (
             <div className={classes.root}>
                 <div className={classes.container}>
@@ -70,6 +86,24 @@ class PaletteList extends Component {
                             </CSSTransition>
                         ))}
                         </TransitionGroup>
+                    {/* <div >Reset</div> */}
+
+                    <Snackbar 
+                        open={openReset} 
+                        autoHideDuration={1000} 
+                        onClose={this.handleClose}
+                        anchorOrigin={{vertical:"bottom",horizontal:"left" }}
+                        message="Refresh To See Changes"
+                    >
+                    </Snackbar>
+                    <Button 
+                        variant="contained" 
+                        color="primary" 
+                        className={classes.resetButton}
+                        onClick={this.clearLocalStorage}
+                        >
+                            Reset
+                    </Button>
                 </div>
                 <Dialog 
                     open={deleteDialoge}

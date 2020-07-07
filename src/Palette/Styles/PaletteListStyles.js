@@ -61,5 +61,10 @@ export default{
     },
     heading: {
       fontSize: "2rem"
+    },
+    resetButton:{
+      margin:"1rem auto",
+      justifyContent:"center",
+      width:"100%"
     }
 };
